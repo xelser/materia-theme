@@ -150,7 +150,7 @@
     }
 
     .unmount-button {
-      margin: (theme.$menu-item-dense-height - theme.$small-size) / 2;
+      margin: calc((theme.$menu-item-dense-height - theme.$small-size) / 2);
       padding: 0;
     }
 
@@ -603,7 +603,7 @@ $pos_list: (top: bottom, bottom: top, left: right, right: left);
 
   .powerstrip button {
     margin: 2px 0 1px;
-    padding: (theme.$large-size - 24px) / 2;
+    padding: calc((theme.$large-size - 24px) / 2);
   }
 
   .option-subtitle {
@@ -633,7 +633,7 @@ calendar.raven-calendar {
   }
 
   button.image-button {
-    padding: (theme.$large-size - 24px) / 2;
+    padding: calc((theme.$large-size - 24px) / 2);
     color: theme-color.hint(theme-color.$on-scrim);
     @include drawing.ink-color(theme-color.$on-scrim, $button-style: "flat");
   }

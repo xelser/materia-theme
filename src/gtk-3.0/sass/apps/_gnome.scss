@@ -91,8 +91,8 @@
 
   // for 3.32
   .nautilus-path-bar button:not(.suggested-action):not(.destructive-action) {
-    padding-left: (theme.$medium-size - 24px) / 2;
-    padding-right: (theme.$medium-size - 24px) / 2;
+    padding-left: calc((theme.$medium-size - 24px) / 2);
+    padding-right: calc((theme.$medium-size - 24px) / 2);
 
     &.text-button {
       min-width: 0;
@@ -145,7 +145,7 @@
   }
 
   button {
-    margin: (32px - theme.$small-size) / 2;
+    margin: calc((32px - theme.$small-size) / 2);
 
     @extend %button-small;
   }
@@ -388,12 +388,12 @@ dialog.background > box.dialog-vbox.vertical > grid.horizontal {
 
     &:last-child:dir(ltr),
     &:not(:first-child):dir(rtl) {
-      margin-left: -(theme.$container-padding) / 2;
+      margin-left: calc(-1 * (theme.$container-padding) / 2);
     }
 
     &:first-child:dir(rtl),
     &:not(:last-child):dir(ltr) {
-      margin-right: -(theme.$container-padding) / 2;
+      margin-right: calc(-1 * (theme.$container-padding) / 2);
     }
   }
 }
@@ -822,8 +822,8 @@ window.workbench preferences preferencesgroup list entry {
 
 button.run-arrow-button {
   // min-width: 12px;
-  padding-left: (theme.$medium-size - 16px) / 2;
-  padding-right: (theme.$medium-size - 16px) / 2;
+  padding-left: calc((theme.$medium-size - 16px) / 2);
+  padding-right: calc((theme.$medium-size - 16px) / 2);
 }
 
 //
@@ -1151,7 +1151,7 @@ task-list-view {
   }
 
   > box > revealer > box > button {
-    margin: (12px * 2 - theme.$medium-size) / 2;
+    margin: calc((12px * 2 - theme.$medium-size) / 2);
 
     .dim-label {
       color: inherit;
@@ -1178,7 +1178,7 @@ tasklistview {
   }
 
   > box > revealer > box > button {
-    margin: (12px * 2 - theme.$medium-size) / 2;
+    margin: calc((12px * 2 - theme.$medium-size) / 2);
 
     .dim-label {
       color: inherit;

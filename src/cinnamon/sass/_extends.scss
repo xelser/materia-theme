@@ -111,14 +111,14 @@
 %check-box-shared {
   width: 24px;
   height: 24px;
-  padding: (theme.$medium-size - 24px) / 2;
+  padding: calc((theme.$medium-size - 24px) / 2);
   border-radius: 100px;
   background-image: url(assets/checkbox-off.svg);
 }
 %radiobutton-shared {
   width: 20px;
   height: 20px;
-  padding: (theme.$medium-size - 20px) / 2;
+  padding: calc((theme.$medium-size - 20px) / 2);
   border-radius: 100px;
   background-image: url(assets/radiobutton-off.svg);
 }
