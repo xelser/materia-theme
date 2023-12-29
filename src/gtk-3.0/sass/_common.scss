@@ -1766,8 +1766,8 @@ window.devel .titlebar:not(.selection-mode) {
   }
 
   &.slider-button {
-    padding-left: (24px - 16px) / 2;
-    padding-right: (24px - 16px) / 2;
+    padding-left: calc((24px - 16px) / 2);
+    padding-right: calc((24px - 16px) / 2);
   }
 }
 
@@ -2605,8 +2605,8 @@ check,
 radio {
   min-height: 24px;
   min-width: 24px;
-  margin: -($check-radio-size - 24px) / 2;
-  padding: ($check-radio-size - 24px) / 2;
+  margin: calc(-1 * ($check-radio-size - 24px) / 2);
+  padding: calc(($check-radio-size - 24px) / 2);
   border-radius: theme.$circular-radius;
   color: theme-color.hint(theme-color.$on-surface);
   @extend %ripple;
@@ -2698,10 +2698,10 @@ radio {
     -gtk-icon-source: -gtk-recolor(url("icons/radio-mixed-symbolic.svg"));
   }
 
-  border-image-slice: $check-radio-size / 2px;
-  border-image-width: $check-radio-size / 2;
+  border-image-slice: calc($check-radio-size / 2px);
+  border-image-width: calc($check-radio-size / 2);
 
-  $radio-indicator-size: 10px / $check-radio-size / 2;
+  $radio-indicator-size: calc(10px / $check-radio-size / 2);
 
   border-image-source:
     -gtk-gradient(
@@ -2817,10 +2817,10 @@ scale {
 
   $slider_size: 32px;
 
-  $slider_margin: -($slider_size - $trough_size) / 2;
-  $finetune_slider_margin: -($slider_size - $finetune_trough_size) / 2;
+  $slider_margin: calc(-1 * ($slider_size - $trough_size) / 2);
+  $finetune_slider_margin: calc(-1 * ($slider_size - $finetune_trough_size) / 2);
 
-  $color_slider_margin: -($slider_size) * 3 / 4;
+  $color_slider_margin: calc(-1 * ($slider_size) * 3 / 4);
   $color_marks_slider_margin: -($slider_size - 16px) - $color_slider_margin;
 
   min-height: $trough_size;
