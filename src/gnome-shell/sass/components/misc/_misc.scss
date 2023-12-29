@@ -27,9 +27,9 @@ $user-icon: if(gnome-shell.$version >= 3.32, ".user-icon", ".framed-user-icon");
   icon-size: $size;
 
   StIcon {
-    width: $size / 2;
-    height: $size / 2;
-    padding: $size / 4;
+    width: calc($size / 2);
+    height: calc($size / 2);
+    padding: calc($size / 4);
   }
 }
 

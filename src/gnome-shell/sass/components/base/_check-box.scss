@@ -12,8 +12,8 @@
     transition-duration: theme.$state-duration;
     width: 24px;
     height: 24px;
-    padding: (theme.$medium-size - 24px) / 2;
-    border-radius: theme.$medium-size / 2;
+    padding: calc((theme.$medium-size - 24px) / 2);
+    border-radius: calc(theme.$medium-size / 2);
   }
 
   StBin,

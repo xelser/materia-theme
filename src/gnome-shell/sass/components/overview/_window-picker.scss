@@ -60,7 +60,7 @@
   width: theme.$medium-size;
   padding: 0;
   border: 0;
-  border-radius: theme.$medium-size / 2;
+  border-radius: calc(theme.$medium-size / 2);
   box-shadow: shadow.$z2;
   background-color: theme-color.$error;
   color: theme-color.$on-error;
@@ -69,7 +69,7 @@
   background-size: 24px;
 
   @if gnome-shell.$version < 3.38 {
-    -shell-close-overlap: theme.$medium-size / 2;
+    -shell-close-overlap: calc(theme.$medium-size / 2);
   }
 
   &:hover {

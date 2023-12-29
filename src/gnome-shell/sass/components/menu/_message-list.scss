@@ -138,8 +138,8 @@
   #{$message-close-button} {
     transition-duration: theme.$state-duration;
     icon-size: 16px;
-    padding: (theme.$small-size - 16px) / 2;
-    border-radius: theme.$small-size / 2;
+    padding: calc((theme.$small-size - 16px) / 2);
+    border-radius: calc(theme.$small-size / 2);
 
     &,
     &:hover,

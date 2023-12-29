@@ -15,7 +15,7 @@ $_subtitle-size: 16px;
 
 // provide font size in pt, with px fallback
 @function _pt($size) {
-  @return ($size * .75 / 1px) * 1pt;
+  @return calc(($size * .75 / 1px)) * 1pt;
 }
 
 // provide icon size in em, with px fallback
