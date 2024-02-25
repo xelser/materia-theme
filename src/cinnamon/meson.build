@@ -29,7 +29,6 @@ foreach theme: themes
   cinnamon_scss_conf = configuration_data()
   cinnamon_scss_conf.set('dark_theme', theme['scss_dark_theme'])
   cinnamon_scss_conf.set('light_topbar', theme['scss_light_topbar'])
-  cinnamon_scss_conf.set('compact', theme['scss_compact'])
   cinnamon_scss_conf.set('current_source_dir', meson.current_source_dir())
 
   cinnamon_temp_name = '@0@.cinnamon'.format(theme['name'])

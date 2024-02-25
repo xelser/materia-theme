@@ -108,7 +108,6 @@ foreach theme: themes
   gnome_shell_scss_conf = configuration_data()
   gnome_shell_scss_conf.set('dark_theme', theme['scss_dark_theme'])
   gnome_shell_scss_conf.set('light_topbar', theme['scss_light_topbar'])
-  gnome_shell_scss_conf.set('compact', theme['scss_compact'])
   gnome_shell_scss_conf.set('version', gnome_shell_version)
   gnome_shell_scss_conf.set('current_source_dir', meson.current_source_dir())
 
